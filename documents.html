@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pa">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102b52">
+<title>NGSF Documents & Verification</title>
+<style>
+:root{--navy:#102b52;--blue:#17477d;--gold:#d5a83b;--ink:#18263a;--muted:#68778b;--line:#dce4ee;--bg:#f3f6fa}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Noto Sans Gurmukhi",sans-serif}
+header{background:var(--navy);color:#fff;padding:18px 20px;border-bottom:4px solid var(--gold)}.wrap{max-width:1100px;margin:auto}header a{color:#fff;text-decoration:none}header b{color:var(--gold)}.crumb{font-size:13px;opacity:.8}
+main{padding:26px 16px 50px}.intro{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:20px}.intro h1{margin:5px 0 8px;font-size:clamp(25px,4vw,36px);line-height:1.2}.intro p{color:var(--muted);margin:0}.tag{color:#87620b;font-weight:700;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}.card h2{font-size:20px;margin:0 0 8px}.card p{color:var(--muted);font-size:14px;min-height:44px}.symbol{font-size:28px;color:var(--blue)}label{display:block;font-weight:650;margin:12px 0 5px}input,select{width:100%;padding:12px;border:1px solid #bdcad9;border-radius:9px;font:inherit;background:#fff}.btn{display:inline-block;border:0;border-radius:9px;background:var(--blue);color:white;padding:11px 15px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}.btn.secondary{background:#edf2f8;color:var(--navy);border:1px solid var(--line)}.result{margin-top:12px;padding:12px;border-radius:9px;background:#f4f7fb;white-space:pre-wrap;overflow-wrap:anywhere}.note{font-size:13px;color:var(--muted)}footer{text-align:center;padding:20px;color:var(--muted);font-size:13px}a{color:var(--blue)}
+</style></head>
+<body>
+<header><div class="wrap"><div class="crumb"><a href="index.html">NGSF Sach Di Soch News</a> / Documents</div><h2 style="margin:6px 0 0"><b>NGSF</b> Documents & Verification</h2></div></header>
+<main class="wrap">
+<section class="intro"><div class="tag">NEW MODULE • DOCUMENT SERVICES</div><h1>ਦਸਤਾਵੇਜ਼ ਅਤੇ ਆਨਲਾਈਨ ਵੈਰੀਫਿਕੇਸ਼ਨ</h1><p>NGSF News ਵੈੱਬਸਾਈਟ ਨਾਲ ਜੁੜਿਆ ਦਸਤਾਵੇਜ਼ ਮੋਡੀਊਲ। ID Card, Appointment Letter ਅਤੇ Achievement Certificate ਲਈ ਵੱਖਰਾ ਰਿਕਾਰਡ ਸਿਸਟਮ ਵਰਤਿਆ ਜਾਵੇਗਾ।</p></section>
+<div class="grid">
+<section class="card"><div class="symbol">▣</div><h2>ID Card</h2><p>ਮੈਂਬਰ ਵੇਰਵੇ, ਅਹੁਦਾ, ਫੋਟੋ ਅਤੇ QR/Barcode ਵਾਲਾ ਪਛਾਣ ਪੱਤਰ।</p><span class="note">Admin authentication setup required before issuing cards.</span></section>
+<section class="card"><div class="symbol">✉</div><h2>Appointment Letter</h2><p>ਵਿਲੱਖਣ ਪੱਤਰ ਨੰਬਰ, ਅਹੁਦਾ, ਮਿਆਦ ਅਤੇ ਪ੍ਰਿੰਟ/PDF ਵਰਕਫਲੋ।</p><span class="note">Issue only after authorized approval.</span></section>
+<section class="card"><div class="symbol">★</div><h2>Achievement Certificate</h2><p>ਸਰਟੀਫਿਕੇਟ ਨੰਬਰ, ਪ੍ਰਾਪਤੀ ਦੇ ਵੇਰਵੇ ਅਤੇ QR ਆਧਾਰਿਤ ਜਾਂਚ।</p><span class="note">Approval and PDF generation setup required.</span></section>
+</div>
+<section class="intro" style="margin-top:18px"><h2 style="margin-top:0">ਦਸਤਾਵੇਜ਼ ਦੀ ਜਾਂਚ ਕਰੋ</h2><p>QR ਕੋਡ ਤੋਂ ਮਿਲਿਆ ਦਸਤਾਵੇਜ਼ ਨੰਬਰ ਜਾਂ ਨੰਬਰ ਇੱਥੇ ਦਰਜ ਕਰੋ। ਇਹ ਫਾਰਮ ਵੈਰੀਫਿਕੇਸ਼ਨ API ਨਾਲ ਜੋੜਨ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ।</p>
+<form id="verifyForm"><label for="docNo">Document Number</label><input id="docNo" name="docNo" placeholder="ਉਦਾਹਰਨ: NGSF-ID-2026-0001" required pattern="[A-Za-z0-9_-]{3,80}"><div style="margin-top:12px"><button class="btn" type="submit">Verify Document</button> <a class="btn secondary" href="index.html">News ਮੁੱਖ ਪੰਨਾ</a></div></form><div id="result" class="result" hidden aria-live="polite"></div><p class="note">ਨੋਟ: ਜਦੋਂ Worker API ਪੂਰੀ ਤਰ੍ਹਾਂ deploy ਅਤੇ test ਹੋਵੇਗੀ, ਇਹ ਫਾਰਮ live verification ਨਤੀਜਾ ਦਿਖਾਏਗਾ।</p></section>
+<section class="intro"><h2 style="margin-top:0">Admin access</h2><p>ਦਸਤਾਵੇਜ਼ ਬਣਾਉਣ, ਸੋਧਣ ਅਤੇ ਮਨਜ਼ੂਰੀ ਲਈ ਸੁਰੱਖਿਅਤ Admin Login ਅਤੇ server-side role checks ਲਾਜ਼ਮੀ ਹਨ। ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੋਈ ਪਾਸਵਰਡ ਜਾਂ secret ਨਹੀਂ ਰੱਖਿਆ ਗਿਆ।</p><p class="note">Status: UI scaffold created; authenticated write/approval workflow, QR/barcode generation, and PDF generation are not yet live.</p></section>
+</main><footer>Design By New Granthi Singh Federation</footer>
+<script>
+const API_BASE = "https://ngsf-document-verification.helpline-ngsf.workers.dev";
+const form=document.getElementById("verifyForm"),out=document.getElementById("result");
+form.addEventListener("submit",async e=>{e.preventDefault();const n=document.getElementById("docNo").value.trim();out.hidden=false;out.textContent="ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…";try{const r=await fetch(API_BASE+"/api/verify/"+encodeURIComponent(n));const data=await r.json();out.textContent=data.valid?"VALID DOCUMENT\n"+JSON.stringify(data.document,null,2):(data.message||data.error||"ਰਿਕਾਰਡ ਦੀ ਪੁਸ਼ਟੀ ਨਹੀਂ ਹੋ ਸਕੀ।");}catch(err){out.textContent="Verification service ਹਾਲੇ ਉਪਲਬਧ ਨਹੀਂ। Worker deploy ਹੋਣ ਤੋਂ ਬਾਅਦ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।";}});
+</script></body></html>
